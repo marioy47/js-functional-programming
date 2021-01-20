@@ -1,12 +1,15 @@
 // recursion.js
+
+// Imperative
 for (let i = 0; i < 5; i++) {
-  console.log("Foor loop:", i);
+  console.log("For loop:", i);
 }
-const forLoop = (value, max, fn) => {
-  if (value < max) {
-    fn(value);
-    return forLoop(value + 1, max, fn);
+
+// Declarative
+const forLoop = (counter, max) => {
+  if (counter < max) {
+    console.log("Recursion:", counter);
+    return forLoop(counter + 1, max);
   }
-  return value;
 };
-forLoop(0, 5, (val) => console.log("Recursion:", val));
+forLoop(0, 5);

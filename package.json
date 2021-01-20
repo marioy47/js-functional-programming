@@ -4,7 +4,8 @@
   "description": "Just some notes and test of JavaScript used as a functional programming",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint *.js",
+    "lint:fix": "eslint --cache --fix *.js"
   },
   "repository": {
     "type": "git",
